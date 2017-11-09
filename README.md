@@ -1,37 +1,56 @@
-## Welcome to GitHub Pages
+Google Maps Android API Demos
+===================================
 
-You can use the [editor on GitHub](https://github.com/mingphukettaxigroup/phukettaxigroup/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+These are demos for the [Google Maps Android API v2](https://developers.google.com/maps/documentation/android-api/).
+They demonstrate most of the features available in the API.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This app was written for a minSdk of 9 and the v4 support library, but it can be easily adapted to
+use native functionality instead.
+(For example replacing ``SupportMapFragment`` with ``MapFragment``.)
 
-### Markdown
+Pre-requisites
+--------------
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Android SDK v23
+- Latest Android Build Tools
+- Android Support Repository
 
-```markdown
-Syntax highlighted code block
+Getting Started
+---------------
 
-# Header 1
-## Header 2
-### Header 3
+This sample use the Gradle build system.
 
-- Bulleted
-- List
+First download the samples by cloning this repository or downloading an archived
+snapshot. (See the options at the top of the page.)
 
-1. Numbered
-2. List
+In Android Studio, use the "Import non-Android Studio project" or 
+"Import Project" option. Next select the ApiDemos/ directory that you downloaded
+from this repository.
+If prompted for a gradle configuration accept the default settings. 
 
-**Bold** and _Italic_ and `Code` text
+Alternatively use the "gradlew build" command to build the project directly.
 
-[Link](url) and ![Image](src)
-```
+Add your API key to the file `debug/values/google_maps_api.xml`.
+It's pulled from there into your app's `AndroidManifest.xml` file.
+See the [quick guide to getting an API key](https://developers.google.com/maps/documentation/android-api/signup).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Support
+-------
 
-### Jekyll Themes
+- Stack Overflow: https://stackoverflow.com/questions/tagged/android+google-maps
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mingphukettaxigroup/phukettaxigroup/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+If you have discovered an issue with the Google Maps Android API v2, please see
+the resources here: https://developers.google.com/maps/documentation/android-api/support
 
-### Support or Contact
+If you've found an error in these samples, please file an issue:
+https://github.com/googlemaps/android-samples/issues
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Patches are encouraged, and may be submitted according to the instructions in
+CONTRIBUTING.md.
+
+![Analytics](https://ga-beacon.appspot.com/UA-12846745-20/android-samples-apidemos/readme?pixel)
+
+License
+-------
+
+Please refer to the [LICENSE](https://github.com/googlemaps/android-samples/blob/master/LICENSE) at the root of this repo.
